@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<link rel="stylesheet" href="style.css">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Zwick Roell Projekt</title>
+
+</head>
+
+<body>
+
+   <div class="sidebar">
+        <div class="hint">Menü</div>
+
+        
+        <div class="button-section">
+
+            <button class="btn" onclick="window.location.href='main.html'">
+                Startseite
+            </button>
+
+            <button class="btn" onclick="window.location.href='mitglieder.html'">
+                Mitglieder
+            </button>
+
+            <button class="btn" onclick="window.location.href='probleme.html'">
+                Probleme
+            </button>
+
+        </div>
+    </div>
+    
+    <header>
+
+        <h1 class="center-title">Mitglieder</h1>
+        <p class="center-title">Alle Mitglieder meiner Gruppe</p>
+
+    </header>
+
+    <section class="button-section">
+
+        <button class="btn" onclick="window.location.href='main.html'">
+            Startseite
+        </button>
+
+    </section>
+
+    <section>
+
+        <div class="member-box">
+
+            <button class="arrow" onclick="prevMember()">&#10094;</button>
+
+            <div class="member-card">
+
+                <h3 id="m-name">Max Mustermann</h3>
+
+                <img id="m-img" src="bild1.jpg" width="200" onclick="openImage(this)" style="cursor:pointer;">
+
+                <table>
+                    <tr>
+                        <td>Alter:</td>
+                        <td id="m-age">17</td>
+                    </tr>
+                    <tr>
+                        <td>Größe:</td>
+                        <td id="m-size">180 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Rolle:</td>
+                        <td id="m-role">Entwickler</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <button class="arrow" onclick="nextMember()">&#10095;</button>
+
+        </div>
+
+    </section>
+
+    <div id="overlay" onclick="closeImage()">
+        <img id="overlayImg">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>

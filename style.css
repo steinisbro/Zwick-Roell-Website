@@ -1,0 +1,225 @@
+body {
+    background-image: url("Arbeiten.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    background: #ccbea7dc;
+    color: white;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 20px 40px;
+    border-radius: 12px;
+    font-size: 26px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* SECTIONS */
+section {
+    background: rgba(255, 255, 255, 0.78);
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* BUTTON BASIS */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ERGEBNIS */
+#ergebnis {
+    margin-top: 20px;
+}
+
+/* LISTEN */
+ul {
+    background: #eeeeeecc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+ul li {
+    margin: 8px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* ZENTRIERUNG */
+.center-title {
+    text-align: center;
+}
+
+/* MODERNE BUTTONS */
+.btn {
+    background-color: #ccbea7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #b3a590;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* BILDER */
+img {
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* OVERLAY (FULLSCREEN IMAGE) */
+#overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+/* BUTTON LEISTE */
+.button-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+}
+
+.member-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.member-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.member-card img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.member-card table {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.arrow {
+    background: #ccbea7;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+}
+
+.member-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.568);
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+/* wenn man drüber hovert → klappt auf */
+.sidebar:hover {
+    width: 150px;
+    background: rgba(0, 0, 0, 0.781);
+}
+
+/* kleiner Hinweisstreifen */
+.hint {
+    writing-mode: vertical-rl;
+    top: 51%;
+    text-align: center;
+    font-size: 30px;
+    color:#ccbea7;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0);
+}
+
+/* Buttons verstecken sich optisch leicht */
+.button-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* optional: Buttons erst sichtbar beim Hover */
+.sidebar .button-section {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sidebar:hover .button-section {
+    opacity: 1;
+}
