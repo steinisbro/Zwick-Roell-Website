@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zwick Roell Projekt</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="hint">Menü</div>
+
+        
+        <div class="button-section">
+
+            <button class="btn" onclick="window.location.href='index.html'">
+                Startseite
+            </button>
+
+            <button class="btn" onclick="window.location.href='mitglieder.html'">
+                Mitglieder
+            </button>
+
+            <button class="btn" onclick="window.location.href='probleme.html'">
+                Probleme
+            </button>
+
+        </div>
+    </div>
+
+    <header>
+        <h1 class="center-title">Zwick Roell Projekt</h1>
+        <p class="center-title">Website von Linus Steinwender - TGI12</p>
+    </header>
+
+    <!--<section class="button-section">
+
+        <button class="btn" onclick="window.location.href='probleme.html'">
+            Probleme
+        </button>
+
+        <button class="btn" onclick="window.location.href='mitglieder.html'">
+            Mitglieder
+        </button>
+
+    </section>-->
+
+    <section>
+
+        <h2>Projektinformationen</h2>
+
+        <img src="Logo3.png" width="250" onclick="openImage(this)" style="cursor:pointer;">
+        <img src="bild3.jpg" width="250">
+
+        <p>
+            <label>
+                Projektname:
+                <input type="text" id="projektname">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Anzahl Mitglieder:
+                <input type="number" id="mitglieder" value="1" min="1">
+            </label>
+        </p>
+
+        <h3>Projektart</h3>
+
+        <label>
+            <input type="radio" name="art" value="Präsentation" checked>
+            Präsentation
+        </label>
+
+        <br>
+
+        <label>
+            <input type="radio" name="art" value="Plakat">
+            Plakat
+        </label>
+
+        <br>
+
+        <label>
+            <input type="radio" name="art" value="Modell">
+            Modell
+        </label>
+
+        <h3>Fach</h3>
+
+        <select id="fach">
+            <option>Informatik</option>
+            <option>Mathematik</option>
+            <option>Geschichte</option>
+            <option>Biologie</option>
+        </select>
+
+        <h3>Besonderheiten</h3>
+
+        <label>
+            <input type="checkbox" id="bilder">
+            Bilder
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" id="video">
+            Video
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" id="quiz">
+            Quiz
+        </label>
+
+        <br><br>
+
+        <button onclick="anzeigen()">
+            Projekt anzeigen
+        </button>
+
+    </section>
+
+    <section>
+
+        <h2>Beispiel einer CSS-Liste</h2>
+
+        <ul>
+            <li>Einleitung</li>
+            <li>Thema</li>
+            <li>Durchführung</li>
+            <li>Ergebnis</li>
+            <li>Fazit</li>
+        </ul>
+
+    </section>
+
+    <section id="ergebnis">
+
+        <h2>Ausgabe</h2>
+
+        <p>Noch keine Daten eingegeben.</p>
+
+    </section>
+
+    <div id="overlay" onclick="closeImage()">
+        <img id="overlayImg">
+    </div>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
