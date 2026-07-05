@@ -12,7 +12,7 @@
     <div class="sidebar">
         <div class="hint">Menü</div>
 
-        
+
         <div class="button-section">
 
             <button class="btn" onclick="window.location.href='index.html'">
@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <header>
+    <header id="mainHeader">
         <h1 class="center-title">Zwick Roell Projekt</h1>
         <p class="center-title">Website von Linus Steinwender - TGI12</p>
     </header>
@@ -47,113 +47,42 @@
 
     </section>-->
 
-    <section>
+    <section class="scroll-section project-section">
 
         <h2>Projektinformationen</h2>
 
+        <div class="info-card">
+            <div class="icon">📋</div>
+            <h3>Aufgabenstellung</h3>
+            <p>Entwicklung einer kompakten automatischen 2-Achs-Messeinrichtung zur Bestimmung von Breite und Dicke von Schulterproben. \n Das System soll präzise, transportabel und kostengünstig sein und die Messwerte automatisch an die Prüfsoftware übertragen.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="icon">📅</div>
+            <h3>Deadline</h3>
+            <p>14. Juli 2026</p>
+        </div>
+
+        <div class="info-card">
+            <div class="icon">👥</div>
+            <h3>Projektteam</h3>
+            <p>3 Mitglieder arbeiten am Projekt.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="icon">💰</div>
+            <h3>Budget</h3>
+            <p>100€ Gesamtbudget für alle Gruppen.</p>
+        </div>
+
+    </section>
+
+    <section class="scroll-section project-section">
+        <h2>Bilder vom Projekt</h2>
         <img src="Logo3.png" width="250" onclick="openImage(this)" style="cursor:pointer;">
         <img src="bild3.jpg" width="250">
 
-        <p>
-            <label>
-                Projektname:
-                <input type="text" id="projektname">
-            </label>
-        </p>
-
-        <p>
-            <label>
-                Anzahl Mitglieder:
-                <input type="number" id="mitglieder" value="1" min="1">
-            </label>
-        </p>
-
-        <h3>Projektart</h3>
-
-        <label>
-            <input type="radio" name="art" value="Präsentation" checked>
-            Präsentation
-        </label>
-
-        <br>
-
-        <label>
-            <input type="radio" name="art" value="Plakat">
-            Plakat
-        </label>
-
-        <br>
-
-        <label>
-            <input type="radio" name="art" value="Modell">
-            Modell
-        </label>
-
-        <h3>Fach</h3>
-
-        <select id="fach">
-            <option>Informatik</option>
-            <option>Mathematik</option>
-            <option>Geschichte</option>
-            <option>Biologie</option>
-        </select>
-
-        <h3>Besonderheiten</h3>
-
-        <label>
-            <input type="checkbox" id="bilder">
-            Bilder
-        </label>
-
-        <br>
-
-        <label>
-            <input type="checkbox" id="video">
-            Video
-        </label>
-
-        <br>
-
-        <label>
-            <input type="checkbox" id="quiz">
-            Quiz
-        </label>
-
-        <br><br>
-
-        <button onclick="anzeigen()">
-            Projekt anzeigen
-        </button>
-
     </section>
-
-    <section>
-
-        <h2>Beispiel einer CSS-Liste</h2>
-
-        <ul>
-            <li>Einleitung</li>
-            <li>Thema</li>
-            <li>Durchführung</li>
-            <li>Ergebnis</li>
-            <li>Fazit</li>
-        </ul>
-
-    </section>
-
-    <section id="ergebnis">
-
-        <h2>Ausgabe</h2>
-
-        <p>Noch keine Daten eingegeben.</p>
-
-    </section>
-
-    <div id="overlay" onclick="closeImage()">
-        <img id="overlayImg">
-    </div>
-
-    
 
     <script src="script.js"></script>
 

@@ -199,7 +199,7 @@ img:hover {
     top: 51%;
     text-align: center;
     font-size: 30px;
-    color:#ccbea7;
+    color: #ccbea7;
     padding: 10px 0;
     border-radius: 5px;
     font-weight: bold;
@@ -222,4 +222,65 @@ img:hover {
 
 .sidebar:hover .button-section {
     opacity: 1;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #ccbea7, #b9aa90);
+    color: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin: 15px 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.info-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#mainHeader {
+    position: relative;
+    z-index: 10;
+    margin-top: 80px;
+    transition: all 0.4s ease;
+    transform: scale(1.4);
+}
+
+/* wenn gescrollt */
+#mainHeader.shrink {
+    transform: scale(0.7);
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.project-section {
+    position: relative;
+    z-index: 1;
+    margin-top: 70px; /* Abstand nach Header */
+
+    opacity: 0;
+    transform: translateY(120px);
+    transition: all 0.8s ease;
+}
+
+.project-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (hover: none) {
+    .sidebar {
+        width: 150px;
+        background: rgba(0, 0, 0, 0.781);
+    }
+
+    .sidebar .button-section {
+        opacity: 1;
+    }
 }
